@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - DestinX</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="w3-light-grey">
+    <header class="w3-container w3-black w3-padding-16">
+        <div class="w3-bar">
+            <div class="w3-bar-item w3-large">DestinX Admin</div>
+            <div class="w3-bar-item w3-right">
+                <a href="home.html" class="w3-button w3-black">Home</a>
+                <a href="my-reservations.html" class="w3-button w3-black">Réservations</a>
+                <a href="suggestion.html" class="w3-button w3-black">Suggestions</a>
+                <a href="index.html" class="w3-button w3-black">Logout</a>
+            </div>
+        </div>
+    </header>
+    <div class="w3-content w3-padding-64">
+        <h2 class="w3-text-black">Tableau de bord administrateur</h2>
+        <div id="admin-welcome" class="w3-panel w3-light-grey w3-padding"></div>
+        <div class="w3-row-padding">
+            <div class="w3-half">
+                <h3>Suggestions</h3>
+                <div id="suggestions-admin-list"></div>
+            </div>
+            <div class="w3-half">
+                <h3>Réservations</h3>
+                <div id="reservations-admin-list"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

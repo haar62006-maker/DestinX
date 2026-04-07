@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer Details - DestinX</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">DestinX</div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="offer-details" id="offer-details">
+            <!-- Details will be populated by JS -->
+        </div>
+        <button class="w3-button w3-black w3-margin-bottom" onclick="bookNow()">Book Now</button>
+        <div class="w3-card w3-white w3-padding-24 review-section">
+            <h3>Ajouter un avis</h3>
+            <p><label>Note</label></p>
+            <p>
+                <select id="review-rating" class="w3-select w3-border">
+                    <option value="">Choisissez une note</option>
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Très bien</option>
+                    <option value="3">3 - Bien</option>
+                    <option value="2">2 - Moyen</option>
+                    <option value="1">1 - Mauvais</option>
+                </select>
+            </p>
+            <p><textarea id="review-comment" class="w3-input w3-border" rows="4" placeholder="Votre commentaire"></textarea></p>
+            <p><button class="w3-button w3-black" onclick="submitReview()">Envoyer l'avis</button></p>
+            <div id="review-success" class="w3-panel w3-green w3-text-white" style="display:none;">
+                Avis ajouté avec succès.
+            </div>
+        </div>
+        <div class="w3-card w3-white w3-padding-24 w3-margin-top">
+            <h3>Avis récents</h3>
+            <div id="offer-reviews"></div>
+        </div>
+        <button class="w3-button w3-grey w3-margin-top" onclick="window.location.href='suggestion.html'">Envoyer une suggestion</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

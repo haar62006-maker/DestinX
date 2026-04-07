@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DestinX | Explore</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-explore">
+    <header class="topbar">
+        <div class="brand">DestinX</div>
+        <nav class="topnav">
+            <a href="index.html">Home</a>
+            <a href="my-reservations.html">My Reservations</a>
+            <a href="suggestion.html">Suggestions</a>
+            <a href="javascript:void(0)" onclick="logout()">Logout</a>
+        </nav>
+    </header>
+
+    <main class="explore-main">
+        <section class="search-panel">
+            <div class="search-copy">
+                <span class="eyebrow">Explore DestinX</span>
+                <h1>Find the best travel offers.</h1>
+                <p>Search destinations, compare trips, and reserve the perfect package for your next journey.</p>
+            </div>
+            <form class="search-form" onsubmit="event.preventDefault(); searchOffers();">
+                <input type="text" id="destination" placeholder="Search destinations..." autocomplete="off">
+                <button type="button" class="btn btn-primary" onclick="searchOffers()">Search</button>
+            </form>
+        </section>
+
+        <section class="offers-grid" id="offers-list">
+            <!-- Offers are loaded here -->
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DestinX | Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-auth">
+    <div class="auth-container">
+        <div class="auth-card">
+            <h1>Welcome back to DestinX</h1>
+            <p>Login to continue your travel booking journey.</p>
+            <form id="login-form" class="auth-form">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <a href="index.html" class="btn btn-secondary">Back to Home</a>
+            </form>
+            <div id="error-message" class="auth-error">Invalid email or password.</div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
